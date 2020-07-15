@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  margin:  0 auto;
+  width: 1616px;
+  display: grid;
+  justify-items: center;
+  justify-content: space-evenly;
+  grid-auto-flow: row dense;
+  grid-template-columns: 216px 216px 216px 216px 216px 216px 216px;
+  grid-gap: 20px;
+  height: 256px;
+}
+
+.item {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0.25em;
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+.large {
+  background: rgba(255, 0, 0, 0.25);
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1366px){
+
+  .grid {
+    width: 1300px;
+    grid-template-columns: 216px 216px 216px 216px 216px ;
+    grid-auto-flow: row dense;
+    height: 216px;
+    grid-gap: 10px;
+  }
+
+  .grid .large{
+    width: 100%;
+    height: 442px;
+  }
+
+}
+
+@media only screen and (max-width: 1280px){
+
+  .grid {
+    width: 1200px;
+    grid-template-columns: 260px 260px 260px 260px;
+    height: 260px;
+  }
+
+  .grid img{
+    width: 260px;
+  }
+
+  .grid .large{
+    width: 100%;
+    height: 530px;
+  }
+
+}
+
+@media only screen and (max-width: 1224px){
+
+  .grid {
+    width: 1100px;
+    grid-template-columns: 200px 200px 200px 200px;
+    height: 200px;
+  }
+
+  .grid img{
+    width: 200px;
+  }
+
+  .grid .large{
+    width: 100%;
+    height: 410px;
+  }
+
+}
+
+@media only screen and (max-width: 768px){
+
+  .grid {
+    width: 700px;
+    grid-template-columns: 330px 330px;
+    height: 200px;
+  }
+
+  .grid img{
+    width: 330px;
+  }
+
+  .grid .large{
+    grid-column: auto;
+    grid-row: auto;
+    width: 330px;
+    height: 330px;
+  }
+
+}
+
+@media only screen and (max-width: 640px){
+
+  .grid {
+    width: 600px;
+    grid-template-columns: 280px 280px;
+  }
+
+  .grid img{
+    width: 280px;
+  }
+
+  .grid .large{
+    width: 280px;
+    height: auto;
+  }
+
+}
+
+
+@media only screen and (max-width: 580px){
+
+  .grid {
+    width: 500px;
+    grid-template-columns: 200px 200px;
+  }
+
+  .grid img{
+    width: 200px;
+  }
+
+  .grid .large{
+    width: 200px;
+    height: auto;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+
+  .grid {
+    width: 400px;
+    grid-template-columns: 300px;
+  }
+
+  .grid img{
+    width: 300px;
+  }
+
+  .grid .large{
+    width: 300px;
+  }
+
+}
+
+
+@media only screen and (max-width: 420px){
+
+  .grid {
+    width: 300px;
+    grid-template-columns: 250px;
+  }
+
+  .grid img{
+    width: 250px;
+  }
+
+  .grid .large{
+    width: 250px;
+  }
+
+}
+
+
