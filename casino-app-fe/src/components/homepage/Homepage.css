@@ -1,6 +1,13 @@
+
+/* Title of the page */
+.title {
+    color: #00A9E0;
+    font-size: 3.6rem;
+}
+/* Style the grif of the items */
 .grid {
     margin: 0 auto;
-    width: 1616px;
+    width: 100%;
     display: grid;
     justify-items: center;
     justify-content: space-evenly;
@@ -9,29 +16,126 @@
     grid-gap: 20px;
 }
 
+/* Navigation styles */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
 
-/* Responsive Grid Desktop*/
+.navigation .title-container{
+    width: 70%;
+}
+
+.navigation .filters-container{
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation .search-container{
+    width: 20%;
+}
+
+.navigation .filters-container .icon-container{
+    width: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navigation .filters-container .icon-container .icons{
+    color: #00A9E0;
+    font-size: 2.4rem;
+    margin-bottom: 5px;
+    width: 50px;
+}
+
+.navigation .filters-container .icon-container .icon-text{
+    color: #00A9E0;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.navigation .search-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navigation .search-container .search-input{
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 2rem;
+    outline: none;
+    border: 1px solid #00A9E0;
+    height: 30px;
+}
+
+.navigation .search-container .search-input-container {
+    position: relative;
+}
+
+.navigation .search-container .search-button {
+    position: absolute;
+    color: #00A9E0;
+    right: 0px;
+    height: 28px;
+    width: 28px;
+    top: 4px;
+    right: 14px;
+}
+
+.navigation .filters-container .icon-container{
+    width: 50px;
+}
+
+
+/* Responsive layout Desktop*/
+
+
+@media only screen and (max-width: 1680px) {
+    .navigation{
+        justify-content: space-between;
+    }
+
+}
 
 @media only screen and (max-width: 1366px) {
     .grid {
-        width: 1300px;
         grid-template-columns: 216px 216px 216px 216px 216px;
         grid-auto-flow: row dense;
         height: 216px;
         grid-gap: 10px;
     }
+
+    .navigation .title-container{
+        width: 40%;
+    }
+    
+    .navigation .filters-container{
+        width: 30%;
+    }
+    
+    .navigation .search-container{
+        width: 30%;
+    }
+    
 }
 
 @media only screen and (max-width: 1280px) {
     .grid {
-        width: 1200px;
         height: 260px;
     }
 }
 
 @media only screen and (max-width: 1224px) {
     .grid {
-        width: 1100px;
         grid-template-columns: 200px 200px 200px 200px;
         height: 200px;
     }
@@ -39,9 +143,7 @@
 
 @media only screen and (max-width: 1024px) {
     .grid {
-        width: 980px;
         grid-template-columns: 250px 250px 250px;
-        height: 200px;
     }
 }
 
@@ -50,30 +152,49 @@
 
 @media only screen and (max-width: 980px) {
     .grid {
-        width: 900px;
         grid-template-columns: 200px 200px 200px 200px;
         height: 200px;
+    }
+    .navigation .title-container{
+        width: 20%;
+    }
+    
+    .navigation .filters-container{
+        width: 30%;
+    }
+    
+    .navigation .search-container{
+        width: 50%;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .grid {
-        width: 700px;
         grid-template-columns: 330px 330px;
     }
 }
 
 @media only screen and (max-width: 700px) {
     .grid {
-        width: 680px;
         grid-template-columns: 280px 280px;
     }
 }
 
 @media only screen and (max-width: 640px) {
     .grid {
-        width: 600px;
         grid-template-columns: 280px 280px;
+    }
+
+    .navigation .title-container{
+        width: 100%;
+    }
+    
+    .navigation .filters-container{
+        display: none;
+    }
+    
+    .navigation .search-container{
+        width: 100%;
     }
 }
 
@@ -82,21 +203,26 @@
 
 @media only screen and (max-width: 580px) {
     .grid {
-        width: 500px;
         grid-template-columns: 200px 200px;
     }
 }
 
 @media only screen and (max-width: 500px) {
     .grid {
-        width: 400px;
         grid-template-columns: 300px;
     }
 }
 
 @media only screen and (max-width: 420px) {
     .grid {
-        width: 300px;
         grid-template-columns: 250px;
+    }
+    .navigation{
+        display: block;
+    }
+    .title {
+        color: #00A9E0;
+        text-align: center;
+        font-size: 3rem;
     }
 }

@@ -1,0 +1,19 @@
+/* Global Font */
+html{
+    font-family: museo-sans, sans-serif;
+    font-style: normal;
+    font-size: 10px;
+}
+/* Container layout */
+.container{
+    width: 1620px;
+    margin: 0 auto;
+}
+
+/* Main Conatiner responsive design */
+
+@media only screen and (max-width: 1680px) {
+    .container {
+        width: 100%;
+    }
+}

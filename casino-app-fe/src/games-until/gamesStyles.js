@@ -1,4 +1,4 @@
-// All games calss names
+// All games class names
 
 const gamesStyles = {
     large: "large",
