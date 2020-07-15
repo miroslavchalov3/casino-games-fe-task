@@ -21,6 +21,17 @@ function App() {
                 <div class="grid">
                 <img src={games[1].aloha.url} alt="test" class="item"></img>
                 <img src={games[1].aloha.url} alt="test" class="item"></img>
+                <img src={games[0].threeHitPay.url} alt="test" class="item large"></img>
+                <img src={games[1].aloha.url} alt="test" class="item"></img>
+                <img src={games[1].aloha.url} alt="test" class="item"></img>
+                <img src={games[1].aloha.url} alt="test" class="item"></img>
+                <img src={games[1].aloha.url} alt="test" class="item"></img>
+                <img src={games[1].aloha.url} alt="test" class="item"></img>
+                <img src={games[1].aloha.url} alt="test" class="item"></img>
+                <img src={games[1].aloha.url} alt="test" class="item"></img>
+                <img src={games[1].aloha.url} alt="test" class="item"></img>
+                <img src={games[1].aloha.url} alt="test" class="item"></img>
+                <img src={games[1].aloha.url} alt="test" class="item"></img>
                 <img src={games[1].aloha.url} alt="test" class="item"></img>
                 <img src={games[1].aloha.url} alt="test" class="item"></img>
                 <img src={games[0].threeHitPay.url} alt="test" class="item large"></img>

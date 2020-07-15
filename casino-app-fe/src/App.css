@@ -94,22 +94,93 @@
 
   .grid {
     width: 700px;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: 330px 330px;
     height: 200px;
   }
 
   .grid img{
-    width: 350px;
+    width: 330px;
   }
 
   .grid .large{
-    background: rgba(255, 0, 0, 0.25);
     grid-column: auto;
     grid-row: auto;
-    width: 100%;
-    height: auto;
-    height: 350px;
+    width: 330px;
+    height: 330px;
   }
 
 }
+
+@media only screen and (max-width: 640px){
+
+  .grid {
+    width: 600px;
+    grid-template-columns: 280px 280px;
+  }
+
+  .grid img{
+    width: 280px;
+  }
+
+  .grid .large{
+    width: 280px;
+    height: auto;
+  }
+
+}
+
+
+@media only screen and (max-width: 580px){
+
+  .grid {
+    width: 500px;
+    grid-template-columns: 200px 200px;
+  }
+
+  .grid img{
+    width: 200px;
+  }
+
+  .grid .large{
+    width: 200px;
+    height: auto;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+
+  .grid {
+    width: 400px;
+    grid-template-columns: 300px;
+  }
+
+  .grid img{
+    width: 300px;
+  }
+
+  .grid .large{
+    width: 300px;
+  }
+
+}
+
+
+@media only screen and (max-width: 420px){
+
+  .grid {
+    width: 300px;
+    grid-template-columns: 250px;
+  }
+
+  .grid img{
+    width: 250px;
+  }
+
+  .grid .large{
+    width: 250px;
+  }
+
+}
+
 
