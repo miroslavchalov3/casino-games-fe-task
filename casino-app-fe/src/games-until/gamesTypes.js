@@ -1,8 +1,8 @@
 // All games types
 
 const gamesTypes = {
-    hot: "Hot",
-    new: "New",
-    old: "Normal"
+    hot: "top",
+    new: "new",
+    all: "all"
 }
 export default gamesTypes;

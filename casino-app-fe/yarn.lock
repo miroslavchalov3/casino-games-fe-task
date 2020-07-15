@@ -1500,6 +1500,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fortawesome/fontawesome-common-types@npm:^0.2.29":
+  version: 0.2.29
+  resolution: "@fortawesome/fontawesome-common-types@npm:0.2.29"
+  checksum: 2815e61475cee977e80bb28a2abc88801526fcecb036c151107614ec7f0e9743a4c6e637098780672934d6d3384355f63974992d7d4af37b72f0ee94dcec18e5
+  languageName: node
+  linkType: hard
+
+"@fortawesome/fontawesome-svg-core@npm:^1.2.29":
+  version: 1.2.29
+  resolution: "@fortawesome/fontawesome-svg-core@npm:1.2.29"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": ^0.2.29
+  checksum: 91fa35de014a512755a3cb0d009ce268bc5ae25188fbd971a1326e022e30e8b63955ba0c6bb82ec8fc120d07612d4d532ba57647b0635c56191da0253d329d4f
+  languageName: node
+  linkType: hard
+
+"@fortawesome/free-solid-svg-icons@npm:^5.13.1":
+  version: 5.13.1
+  resolution: "@fortawesome/free-solid-svg-icons@npm:5.13.1"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": ^0.2.29
+  checksum: b6b4fb6fef7f9a8db84d15a5375769e5b29116f5c208d348c6f1f514287fad725baea9902dfb7134c971d0ec7edd84541bdd01dc4d1c2188c859c10e23ca18dc
+  languageName: node
+  linkType: hard
+
+"@fortawesome/react-fontawesome@npm:^0.1.11":
+  version: 0.1.11
+  resolution: "@fortawesome/react-fontawesome@npm:0.1.11"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@fortawesome/fontawesome-svg-core": ^1.2.20
+    react: 16.x
+  checksum: 7b1fb2b4f6a7357592282f68868ea37124104de35ce67ceea17f0cff0d11989ceb4640d098930f46f3e7fc956bf323abf37c9919fc1a6a5078ad9d96c30ca7fd
+  languageName: node
+  linkType: hard
+
 "@hapi/address@npm:2.x.x":
   version: 2.1.4
   resolution: "@hapi/address@npm:2.1.4"
@@ -3674,6 +3711,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "casino-app-fe@workspace:."
   dependencies:
+    "@fortawesome/fontawesome-svg-core": ^1.2.29
+    "@fortawesome/free-solid-svg-icons": ^5.13.1
+    "@fortawesome/react-fontawesome": ^0.1.11
     "@testing-library/jest-dom": ^4.2.4
     "@testing-library/react": ^9.3.2
     "@testing-library/user-event": ^7.1.2
