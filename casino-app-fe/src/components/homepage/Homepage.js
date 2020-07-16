@@ -64,7 +64,6 @@ class HomePage extends Component {
         let searchedGames = [];
         this.setState({ data: games }, () => {
             if(this.state.search !== "" && !this.state.activeFilters) {
-                console.log(this.state.data);
                 this.state.data.filter(item => {
                     if(item.name.toLowerCase().startsWith(this.state.search)){
                         searchedGames.push(item);
