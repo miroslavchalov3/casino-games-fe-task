@@ -60,34 +60,39 @@ class HomePage extends Component {
 
     // Search functionality
     search = () => {
-        let searchedGames = [];
-        
-        if(this.state.search !== "" && !this.state.activeFilters) {
-            this.state.data.filter(item => {
-                if(item.name.toLowerCase().startsWith(this.state.search)){
-                    searchedGames.push(item);
-                }
-            });
-            this.setState({data: searchedGames});
-            return;
-        } 
-        else if(this.state.activeFilters) {
-            this.state.filteredTempGames.filter(item => {
-                if(item.name.toLowerCase().startsWith(this.state.search)){
-                    searchedGames.push(item);
-                }
-            });
-            this.setState({data: searchedGames});
 
-        } else {
-            this.setState({data: games});
-        }
+        let searchedGames = [];
+        this.setState({ data: games }, () => {
+            if(this.state.search !== "" && !this.state.activeFilters) {
+                console.log(this.state.data);
+                this.state.data.filter(item => {
+                    if(item.name.toLowerCase().startsWith(this.state.search)){
+                        searchedGames.push(item);
+                    }
+                });
+                this.setState({data: searchedGames});
+            } 
+            else if(this.state.activeFilters) {
+                this.state.filteredTempGames.filter(item => {
+                    if(item.name.toLowerCase().startsWith(this.state.search)){
+                        searchedGames.push(item);
+                    }
+                });
+                this.setState({data: searchedGames});
+    
+            } else {
+                this.setState({data: games});
+            }
+        }); 
+        
     }
 
     // Searching when you press enter
     handleKeyDown = (e) => {
         if (e.key === 'Enter') {
+            this.setState({data: games});
           this.search();
+       
         }
     }
 
