@@ -14,7 +14,7 @@ const games = [{
     {
         id: 2,
         url: require("../games-thumbs/fafa-twins.jpg"),
-        name: gamesNames.fataTwins,
+        name: gamesNames.fafaTwins,
         type: gamesTypes.old,
         styleClass: gamesStyles.normal
     },
@@ -49,7 +49,7 @@ const games = [{
     {
         id: 7,
         url: require("../games-thumbs/fafa-twins.jpg"),
-        name: gamesNames.fataTwins,
+        name: gamesNames.fafaTwins,
         type: gamesTypes.old,
         styleClass: gamesStyles.normal
     },

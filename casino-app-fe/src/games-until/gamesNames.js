@@ -6,7 +6,7 @@ const gamesNames = {
     booster: "Booster",
     dayAndDead: "Day and Dead",
     drJekyil: "Dr.Jekyil",
-    fataTwins: "Fata Twins",
+    fafaTwins: "Fafa Twins",
     fruitSpin: "Fruit Spin",
     fruitZen: "Fruit Zen",
     gonzoQuest: "Gonzo Quest",
