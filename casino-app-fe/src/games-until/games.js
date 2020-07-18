@@ -112,7 +112,7 @@ const games = [{
     {
         id: 16,
         url: require("../games-thumbs/jumanji.jpg"),
-        name: gamesNames.jumangi,
+        name: gamesNames.jumanji,
         type: gamesTypes.hot,
         styleClass: gamesStyles.large
     },

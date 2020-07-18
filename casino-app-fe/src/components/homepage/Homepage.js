@@ -47,7 +47,8 @@ class HomePage extends Component {
     }
 
     // Apply the search filters on click
-    applyFilters = (value) => {
+    applyFilters = (value, event) => {
+        console.log(event);
         let currentFilter = value;
         this.search();
         this.filterItems(currentFilter);
@@ -110,13 +111,13 @@ class HomePage extends Component {
                             <h1 className="title">{this.state.text.slots} </h1>
                         </div>
                         <div className="filters-container">
-                            <div className="icon-container" onClick={() => (this.applyFilters('all'))}>
+                            <div className="icon-container" onClick={() => (this.applyFilters('all', this.target))}>
                                 <FontAwesomeIcon className="icons" index={0} icon={faTh} /><span className="icon-text"> {this.state.text.all} </span>
                             </div>
-                            <div className="icon-container" onClick={() => (this.applyFilters('new'))}>
+                            <div className="icon-container" onClick={() => (this.applyFilters('new', this.target))}>
                                 <FontAwesomeIcon  className="icons" icon={faBookmark}/><span className="icon-text"> {this.state.text.new} </span>
                             </div>
-                            <div className="icon-container" onClick={() => (this.applyFilters('top'))}>
+                            <div className="icon-container" onClick={() => (this.applyFilters('top', this.target))}>
                                 <FontAwesomeIcon className="icons"  icon={faStar} /><span className="icon-text"> {this.state.text.top} </span>
                             </div>
                         </div>
